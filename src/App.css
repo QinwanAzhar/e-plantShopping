@@ -1,0 +1,123 @@
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #16302A;
+}
+
+/* Background image for the Paradise Nursery landing page. */
+.background-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #16302A;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(124, 169, 130, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(227, 168, 87, 0.18), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Cg fill='none' stroke='%232F5D50' stroke-width='2' opacity='0.5'%3E%3Cpath d='M40 560 C60 420 40 320 120 220 C180 140 280 120 320 40'/%3E%3Cpath d='M120 220 C60 200 20 150 10 90'/%3E%3Cpath d='M120 220 C170 260 230 260 270 220'/%3E%3Cpath d='M320 40 C360 80 420 90 470 60'/%3E%3Cpath d='M320 40 C300 90 300 140 340 180'/%3E%3Cpath d='M480 560 C520 470 560 400 560 320 C560 240 520 180 460 140'/%3E%3Cpath d='M460 140 C500 140 540 120 560 80'/%3E%3Cpath d='M460 140 C420 170 400 210 410 260'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(180deg, #16302A 0%, #1B3A2F 60%, #16302A 100%);
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: cover, cover, 420px 420px, cover;
+  background-position: center, center, center, center;
+}
+
+.landing-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(22, 48, 42, 0.15) 0%, rgba(22, 48, 42, 0.75) 100%);
+}
+
+.landing-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 0 32px;
+  text-align: left;
+}
+
+.landing-eyebrow {
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  color: #E3A857;
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+
+.landing-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 600;
+  color: #F6F3EA;
+  margin: 0 0 22px;
+  line-height: 1;
+}
+
+.about-us-container {
+  margin: 0 0 34px;
+  max-width: 56ch;
+}
+
+.about-us-container h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  color: #E3A857;
+  margin: 0 0 10px;
+}
+
+.about-us-container p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(246, 243, 234, 0.88);
+  margin: 0 0 14px;
+}
+
+.landing-cta {
+  display: inline-block;
+}
+
+.btn {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 0.98rem;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: #E3A857;
+  color: #16302A;
+  box-shadow: 0 8px 24px rgba(227, 168, 87, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(227, 168, 87, 0.32);
+}
+
+.btn-primary:disabled {
+  background: #5C6A5F;
+  color: rgba(246, 243, 234, 0.7);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .landing-content {
+    padding: 0 24px;
+  }
+}

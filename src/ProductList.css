@@ -1,0 +1,154 @@
+.page {
+  min-height: 100vh;
+  background: #EFF3ED;
+}
+
+.product-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 6vw 90px;
+}
+
+.product-page-header {
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+
+.section-eyebrow {
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #B27A2C;
+  margin: 0 0 10px;
+}
+
+.product-page-header h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  color: #16302A;
+  margin: 0 0 12px;
+}
+
+.section-lede {
+  font-family: 'Manrope', sans-serif;
+  color: #435347;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.category-block {
+  margin-bottom: 52px;
+}
+
+.category-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px solid rgba(22, 48, 42, 0.12);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.category-heading h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  color: #2F5D50;
+  margin: 0;
+}
+
+.category-heading p {
+  font-family: 'Manrope', sans-serif;
+  color: #6B7B6E;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.plant-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.plant-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(22, 48, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(22, 48, 42, 0.14);
+}
+
+.plant-thumb {
+  background: linear-gradient(160deg, #DCE7DC 0%, #EFF3ED 100%);
+  padding: 18px;
+  aspect-ratio: 4 / 3;
+}
+
+.plant-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.plant-name {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  color: #16302A;
+  margin: 0;
+}
+
+.plant-description {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.88rem;
+  color: #6B7B6E;
+  margin: 0 0 10px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.plant-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.plant-price {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #2F5D50;
+}
+
+.btn-add {
+  background: #2F5D50;
+  color: #F6F3EA;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+}
+
+.btn-add:hover:not(:disabled) {
+  background: #24473D;
+  transform: translateY(-1px);
+}
+
+.btn-add:disabled {
+  background: #C7D3C9;
+  color: #6B7B6E;
+  cursor: default;
+}
